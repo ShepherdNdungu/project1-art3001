@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #ff0000; */
+}
+.site-content {
+    margin: 1% 5% 0%;
+    background-color: black;
+}
+.nav-bar {
+    margin-right: 2ex;
+    float: left;
+    height: 100%;
+    width: 16%;
+    position: fixed;
+    z-index: 1;
+    font-size: 100%;
+}
+.main-content {
+    width: 80%;
+    float: right;
+    /* margin-left: 16%; */
+}
+
+.nav-bar li {
+    list-style-type: none;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 1em;
+    transition: .1s;
+}
+
+.nav-bar ul li a:hover {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /* border: 0px 3px 3px 3px black; */
+    /* border-radius: 5px; */
+}
+
+
+.nav-bar ul li .active {
+    background-color: chocolate;
+    color: white;
+    transition: .4s;
+}
+.nav-bar ul li .active:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdown_ex{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-button {
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 5px 10px 0px #000000;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    float: none;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.main-content {
+    background: rgba(255,229,142);
+}
+
+.section {
+    display: block;
+    padding: 120px 80px 120px;
+}
+.section1 {
+    background-image: url(https://www.codenameone.com/img/blog/gradients.png);
+    /* max-width: 100%; */
+    /* overflow: hidden; */
+    background-size: cover;
+    background-position: bottom;
+    padding: 120px 80px 120px;
+    @media only screen and (max-width: 600px) {
+        font-size: 1.5em;
+    }
+    @media only screen and (min-width: 600px) {
+        font-size: 2em;
+    }
+    @media only screen and (min-width: 992px) {
+        font-size: 3em;
+    }
+
+}
+
+.column1 {
+    text-align: center;
+}
+
+.section2 {
+    background-color: black;
+}
+
+.section2 div{
+    /* background-color: aquamarine; */
+    text-align: center;
+    color: white;
+}
+
+.section3 {
+    padding: 0;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    min-width: 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, 
+        rgba(255,255,255,1) 13%,
+        rgba(255,211,160,1) 48%, 
+        rgba(255,229,142,1) 100%);
+    padding: 120px 80px 120px;
+    gap: 5px 5px;
+}
+
+.grid_item {
+    background-color: rgb(255, 255, 255, 0.89);
+    min-width: 0px;
+    border: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05),
+        0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.large_poster {
+    height: 500px;
+    max-height: 500px;
+    width: 400px;
+    border: solid;
+    align-items: center;
+}
+
+.section4, .section5{
+    display: flex;
+    justify-content: center;
+}

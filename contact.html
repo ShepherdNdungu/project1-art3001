@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style2.css">
+    <link rel="stylesheet" href="styles/transitions.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wcw3hlp.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tkm3dai.css">
+    <link rel="stylesheet" href="styles/contactCSS.css">
+    <link rel="icon" href="images/my logo.svg" type="image/x-icon">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="transition transition-3 is-active"></div>
+
+    <div class="site-content">
+        <div class="side-bar">
+            <a href="index.html">
+                <div class="site-logo">
+                    <img src="images/my logo.svg" alt="site-logo"/>
+                </div>
+            </a>
+            <div class="nav-bar">
+                <ul>
+                    <li><a class="current" href="contact.html">Contact</a></li>
+                    <li><a href="exercises.html">Exercises</a></li>
+                    <li><a href="weeklies.html">Weeklies</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                </ul>
+                <div class="dark-mode-toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider">
+                            <span class="switch-icon switch-on">☀️</span>
+                            <span class="switch-icon switch-off">🌙</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="paragraph">
+                <h1>REACH OUT</h1>
+                <div>
+                   <p>
+                    I'd love to connect!
+                   </p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="row"> 
+                    <div class="column">
+                        <img src="images/paper airplane.gif" alt="">
+                    </div>
+                    <div class="column contact-area">
+                        <form action="/action_page.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="first-name" placeholder="">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="last-name" placeholder="">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Your email...">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Topic">
+                            <label for="info"> </label>
+                            <textarea name="information" id="information" style="height: 200px;"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p id="to-top"><a class="transition">Back to top⬆️</a></p>
+                <br>
+                <p>-------  Created by Shepherd Ndungu  -------</p>
+            </div>
+            
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
