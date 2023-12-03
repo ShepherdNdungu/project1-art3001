@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly F</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: wheat;
+            font-family: monospace;
+        }
+        body {
+            background-color: antiquewhite;
+            background: orange;
+        }
+
+        .section {
+            display: block;
+            padding: 20px 150px 20px;
+        }
+
+        .column1 {
+            font-family: monospace;
+            text-align: left;
+            padding-left: 3ex;
+            font-size: 4ex;
+        }
+
+        .grid_container {
+            display: grid;
+            grid-template-columns: auto auto;
+            /* background-color: brown;  */
+            padding: 30px;
+            gap: 10px 10px;
+        }
+
+        .grid_item {
+            background-color: rgb(194, 78, 0);
+            border: hidden; 
+            padding: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blue(5px);
+        }
+
+        span {
+            font-weight: 800;
+            font-size: 50px;
+        }
+
+        .footer {
+            padding-left: 5ex;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .section {
+                display: block;
+                padding: 20px 80px 20px;
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            .grid_container {
+                display: grid;
+                grid-template-columns: auto;
+                padding: 30px;
+                gap: 10px 10px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="row1">
+            <div class="column1">
+                <h1>Weekly F</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="grid_container">
+            <div class="grid_item">
+                <p><span>Project One</span></p> 
+                <p>The idea of project one for me is that it
+                    can be both an art project and a useful 
+                    website for the future. And although I intend
+                    on using it (or at least the ideas gotten from
+                    it) in the future professionally, I would like 
+                    to add some artistic qualities to it.
+                </p>
+            </div>
+            <div class="grid_item">
+                <p><span>Ideas</span></p> 
+                <p>I like the colors of this page. It reminds me
+                    of a Wes Anderson film, Fantastic Mr. Fox.
+                    The bold colours make it more exciting!
+                    This will probably show up in Project one.
+                </p>
+                <br>
+                <p>I'd also like to incorporate clever images/patterns.
+                    Adding texture to the site without it looking too
+                    tacky.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="footer">
+            <p>See you next week👍🏾</p>
+        </div>
+    </div>
+
+</body>
+</html>

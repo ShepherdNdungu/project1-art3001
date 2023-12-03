@@ -3,42 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Project One</title>
+    <link rel="stylesheet" href="styles/style2.css">
+    <link rel="stylesheet" href="styles/transitions.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wcw3hlp.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tkm3dai.css">
+    <link rel="icon" href="images/my logo.svg" type="image/x-icon">
+    <title>Project 1</title>
 </head>
-<body>
-    <div class="nav-bar">
-        <ul>
-            <li><a class="active" href="#">Contact</a></li>
-            <li><a href="#">Rando</a></li>
-            <li><a href="#">Excersises</a></li>
-            <li><div class="dropdown_ex">
-                <a class="dropdown-button" href="#">Weeklies</a>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+<body id="body">
+    <div class="transition transition-3 is-active"></div>
+
+    <div class="site-content">
+        <div class="side-bar">
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="images/my logo.svg" alt="site-logo"/>
+                </a>
+            </div>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="exercises.html">Exercises</a></li>
+                    <li><a href="weeklies.html">Weeklies</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="current" href="index.html">Home</a></li>
+                </ul>
+                <div class="dark-mode-toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider">
+                            <span class="switch-icon switch-on">☀️</span>
+                            <span class="switch-icon switch-off">🌙</span>
+                        </span>
+                    </label>
                 </div>
-            </div></li>
-            <li><a href="#">About</a></li>
-            <li><a href="index.html">Home</a></li>
-        </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="section section1">
+                <div class="row1">
+                    <div class="column1">
+                        <p>Introducing</p>
+                        <p><span id="title">Shepherd's Page</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section2">
+                <marquee class="marquee" behavior="scroll" direction="left" scrollamount="15">
+                    LEARN MORE ABOUT ME, MY WORK,
+                    AND ANYTHING ELSE YOU MIGHT STUMBLE
+                    UPON. DON'T GET LOST!
+                </marquee>
+            </div>
+
+            <!-- <div class="section section3">
+                <div class="grid_container">
+                    <div class="grid_item">
+                        <div>
+                            <img src="images/Bee Gees.png" alt="">
+                        </div>
+                        <div>
+                            <p>Weeklies</p> 
+                        </div>
+                    </div>
+                    <div class="grid_item">
+                        <p>Exercises</p>
+                    </div>
+                    <div class="grid_item">
+                        <p>Projects</p>
+                    </div>
+                    <div class="grid_item">
+                        <p>About Me</p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="section">
+                <div class="row-click">
+                    <div class="column-click">
+                        <img src="images/CLICKS-01.png">
+                        <img src="images/CLICKS-02.png">
+                    </div>
+                </div>
+                <div class="row-click">
+                    <div class="column-click">
+                        <img src="images/CLICKS-03.png">
+                        <img src="images/CLICKS-04.png">
+                    </div>
+                </div>
+            </div> -->
+            <div class="section">
+                <div class="row-click">
+                    <div class="column-click">
+                        <a href="weeklies.html"><img src="images/click-01.png"></a>
+                        <a href="exercises.html"><img src="images/click-02.png"></a>
+                    </div>
+                </div>
+                <div class="row-click">
+                    <div class="column-click">
+                        <a href="contact.html"><img src="images/click-03.png"></a>
+                        <a href="about.html"><img src="images/click-04.png"></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="section section4">
+                <div><h1>Personal Work</h1></div>
+                <br>
+                <div class="poster-container">
+                    <div class="poster-img">
+                        <img src="images/Wild Wild West.png">
+                    </div>
+                    <div class="details">
+                        <div class="poster-name">
+                            <p>Wild, Wild West</p>
+                        </div>
+                        <div class="poster-description">
+                            <p>
+                                After an unforgettable trip, I wanted to immortalize it
+                                with this great moment. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- <div class="poster-container">
+                    <div class="poster-img">
+                        <img src="images/Bee Gees.png">
+                    </div>
+                    <div class="details">
+                        <div class="poster-name">
+                            <p>Bee Gees</p>
+                        </div>
+                        <div class="poster-description">
+                            <p>
+                                The first of a series of album art I'd like to make. Plus, who
+                                doesn't like the Bee Gees??
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row-click">
+                    <div class="column-click">
+                        <div class="poster-container">
+                            <div class="poster-img">
+                                <img src="images/Abstract II.png">
+                            </div>
+                            <div class="details">
+                                <div class="poster-name">
+                                    <p>Abstract II: Squint</p>
+                                </div>
+                                <div class="poster-description">
+                                    <p>
+                                        I was just being goofy with this one.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poster-container">
+                            <div class="poster-img">
+                                <img src="images/Bee Gees.png">
+                            </div>
+                            <div class="details">
+                                <div class="poster-name">
+                                    <p>Bee Gees</p>
+                                </div>
+                                <div class="poster-description">
+                                    <p>
+                                        The first of a series of album art I'd like to make. Plus, who
+                                        doesn't like the Bee Gees??
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poster-container">
+                            <div class="poster-img">
+                                <img src="images/Dad.png">
+                            </div>
+                            <div class="details">
+                                <div class="poster-name">
+                                    <p>Wedding Day: Dad</p>
+                                </div>
+                                <div class="poster-description">
+                                    <p>
+                                        My dad's side of my parent's anniversary
+                                        gift.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poster-container">
+                            <div class="poster-img">
+                                <img src="images/berlin.png">
+                            </div>
+                            <div class="details">
+                                <div class="poster-name">
+                                    <p>Hangin' in Berlin</p>
+                                </div>
+                                <div class="poster-description">
+                                    <p>
+                                        One of a series of social posts of my time visiting
+                                        my sister.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-click">
+                    <div class="column-click">
+                        <div class="poster-container">
+                            <div class="poster-img">
+                                <img src="images/Abstract I - Wall Art.png">
+                            </div>
+                            <div class="details">
+                                <div class="poster-name">
+                                    <p>Abstract I: Fish?</p>
+                                </div>
+                                <div class="poster-description">
+                                    <p>
+                                        Is it a fish or a thing with googly eyes?🤷🏾‍♂️
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poster-container">
+                            <div class="poster-img">
+                                <img src="images/Mum.png">
+                            </div>
+                            <div class="details">
+                                <div class="poster-name">
+                                    <p>Weddding Day: Mum</p>
+                                </div>
+                                <div class="poster-description">
+                                    <p>
+                                        My mum's side of my parent's anniversary
+                                        gift.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="poster-container">
+                            <div class="poster-img">
+                                <img src="images/ignite-black-and-white-collage-1.webp">
+                            </div>
+                            <div class="details">
+                                <div class="poster-name">
+                                    <p>Ignite Conference 2020</p>
+                                </div>
+                                <div class="poster-description">
+                                    <p>
+                                        The poster for the InterVarsity Black Campus Ministries
+                                        conference in 2020.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p id="to-top"><a class="transition">Back to top⬆️</a></p>
+                <br>
+                <p>-------  Created by Shepherd Ndungu  -------</p>
+            </div>
+        </div>
     </div>
 
-    <div class="dropdown">
-
-    </div>
-
-    <div class="banner_container">
-        <img
-            class="banner"
-            src="Backdrop-04.png"
-            alt="banner"/>
-    </div>
-    <div style="height: 1500px; margin-top: 10%;">
-        <h1>TITLE!</h1>
-    </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>
-

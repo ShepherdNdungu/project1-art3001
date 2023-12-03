@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    	<title>My Website</title>
+   	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<style>
+	body {
+	margin: 1em;
+	padding: 0;
+}
+
+section {
+	justify-content: center;
+}
+
+.gradient {
+	
+}
+
+.grad-purple{
+	/*display: flex*/
+	height: auto;
+	width: auto;
+	padding: 5em;
+	
+	justify-content: center;
+	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.grad-red{
+	/*display: flex*/
+	height: auto;
+	width: auto;
+	padding: 5em;
+	
+	justify-content: center;
+	background-image: linear-gradient(to top, #f6d365 0%, #a18cd1 100%);
+}
+
+.box{
+	/*background-image: radial-gradient(#ffffff 0%, #ffffff 50%, #000000 100%);*/
+	display: inline-block;
+	border: hidden;
+	border-radius: 5px;
+	padding: 0.25em;
+	background: #f4f0e0;
+}
+
+.center-box{
+	/*display: inline-block;*/
+	padding: 0.25em;
+	justify-content: center;
+	align-iterms: center;
+	text-align: center;
+	background: #d22b2b;
+	color: white;
+	margin: auto;
+	
+	border: hidden;
+	border-radius: 0.25em;
+	height: auto;
+	width: 50%;
+}
+
+.pad {
+	padding: 5em;
+}
+	</style>
+  	</head>
+  	<body>
+		<h1>Weekly D</h1>
+		<p>How I got Exercise 2 done.</p>
+		<section class="grad-purple">
+			<h2 class="box">Frustration 1: Gradient</h2>
+			<p>
+				I planned on version four of my haiku to have a gradient shape/background with a noise filter on it. After watching many tutorials and trying to implement it in different ways, <strong>I couldn't get it to work.</strong> The farthest I got was creating a rectangle with a noise map on it. No gradient. No text. Nada.
+			</p>
+		</section>
+		<section class="grad-red">
+			<h2 class="box">Frustration 2: Pre formatted text</h2>
+			<p>
+				In my last variation, I attempted to shape an apple out of preformatted text; the key word is <strong>attempted.</strong> I shouldv'e given up and come up with a different concept, but I was determined to learn the ways of pre-formmated text are.
+			</p>
+		</section>
+		<section class="pad">
+			<div class="center">
+			<h2 class="center-box">
+				But overall I learned a lot and enjoyed it!
+			</h2>
+			</div>
+		</section>
+  	</body>
+</html>

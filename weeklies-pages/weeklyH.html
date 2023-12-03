@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly H</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: rgb(124, 124, 124);
+            /* font-family: monospace; */
+        }
+        body {
+            background: white;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        .section {
+            display: block;
+            padding: 20px 150px 20px;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 5em;
+        }
+
+        button {
+            background-color: aqua;
+            color: black;
+            padding: 5vw;
+            border: none;
+            transition: .6s;
+        }
+
+        button:hover {
+                box-shadow: 5px 15px rgba(0, 0, 0, 0.384);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>Weekly H</h1>
+    </div>
+    
+    <div class="section">
+        <button id="button">Click for content!</button>
+    </div>
+
+    <div class="section" id="text_section"></div>
+    <script>
+        document.getElementById("button").addEventListener("click", () => { 
+            let text_section = document.getElementById("text_section");
+            let par = document.createTextNode("We showed our projects that we used the p5 library to create. ");
+            text_section.appendChild(par);
+            par = document.createTextNode("Although I am getting more confortable with JavaScript, I still find it difficult to learn. I'm not sure why, I've been able to learn different languages at a reasonable pace, but JS has been giving me trouble in all my classes.");
+            text_section.appendChild(par);
+            par = document.createTextNode("I'll keep working at it. Everything will just take more time than I'm used to.");
+            text_section.appendChild(par);
+            document.getElementById("button").style.display = "none";
+        });
+    </script>
+</body>
+</html>

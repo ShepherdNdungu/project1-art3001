@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly I</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: rgb(0, 0, 0);
+            /* font-family: monospace; */
+        }
+        body {
+            display: block;
+            background: white;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        .section {
+            display: block;
+            padding: 20px 150px 20px;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 1.5em;
+        }
+
+        button {
+            background-color: aqua;
+            color: black;
+            font-size: 2em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 5vw;
+            border: none;
+            transition: .6s;
+            cursor: pointer;
+        }
+
+        #text_section {
+            /* display: none; */
+            text-align: left;
+            opacity: 0;
+            transition: .6s;
+        }
+
+        button:hover {
+            box-shadow: 5px 15px rgba(0, 0, 0, 0.384);
+        }
+        button:active {
+            box-shadow: none;
+            transition: .1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="slide" class="section">
+        <h1>Weekly H</h1>
+        <p>by Shepherd Ndungu</p>
+        
+    </div>
+    
+    <div class="section">
+        <button id="button">Click for content!</button>
+    </div>
+
+    <div class="section" id="text_section">
+        <p style="font-size: 2em;">Last week of class before critiques!</p>
+        <p>I enjoyed this class because it finally gave me the necessary space and 
+            reasoning to learn how to build websites. In reality, I will be using
+            whatever frameworks or programs to create websites and web applications, 
+            but understanding how the code works is incredibly valuable even with 
+            those tools.
+        </p>
+        <br>
+        <p>
+            I'll continue working on my website. Although I'm already satisfied with
+            it, there's still one more feature I'd love to implement...
+        </p>
+    </div>
+    <script>
+        document.getElementById("button").addEventListener("click", () => {
+            // document.getElementById("text_section").style.display = "block";  
+            document.getElementById("text_section").style.opacity = "1";  
+            document.getElementById("button").style.transform = "translateY(-20px)";
+            document.getElementById("button").style.opacity = "0";
+            document.getElementById("button").style.cursor = "default";
+            document.getElementsByTagName('body').style.background = "aqua";
+            document.getElementById("slide").style.transform = "translateY(800px)";
+
+
+
+        });
+    </script>
+</body>
+</html>

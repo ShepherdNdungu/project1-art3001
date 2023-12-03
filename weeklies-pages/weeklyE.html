@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly E</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        body {
+            background-color: antiquewhite;
+            background: radial-gradient(circle, rgba(252,176,69,1) 13%,
+                        rgba(253,29,29,1) 47%,
+                        rgba(40,4,63,1) 100%);
+        }
+
+        .section {
+            display: block;
+            padding: 20px 100px 20px;
+        }
+
+        .column1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .grid_container {
+            display: grid;
+            grid-template-columns: auto auto;
+            /* background-color: brown;  */
+            padding: 30px;
+            gap: 10px 10px;
+        }
+
+        .grid_item {
+            background-color: rgba(255, 255, 255, 0.3);
+            border: hidden; 
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blue(5px);
+        }
+
+        span {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 800;
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .section {
+                display: block;
+                padding: 20px 80px 20px;
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            .grid_container {
+                display: grid;
+                grid-template-columns: auto;
+                padding: 30px;
+                gap: 10px 10px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="row1">
+            <div class="column1">
+                <h1>Introducing Weekly E</h1>
+                <h4>(Designed to be viewed on not HUGE screens)</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="grid_container">
+            <div class="grid_item">
+                <p><span>Grids</span></p> 
+                <p>I learned how to make grids! This is going to be
+                    especially helpful for my project 1 because I'd
+                    like to use this grid structure to organize my page.
+                </p>
+            </div>
+            <div class="grid_item">
+                <p><span>Discussion</span></p> 
+                <p>Our discussion on online identities went well
+                    (I think). I didn't intend on it being all politics,
+                    but I did enjoy the discussions we had. Even though
+                    politics is seen as a taboo topic, it's good to still
+                    try and get people engaged; that's how healthy discussions
+                    are conducted.
+                </p>
+            </div>
+            <div class="grid_item">
+                <p><span>Midterms</span></p> 
+                <p>It's nice not having a midterm in this class.
+                    Midterm season has arrived!
+                </p>
+            </div>
+            <div class="grid_item">
+                <p><span>Fall Break</span></p> 
+                <p>Hot take: fall break doesn't really mean much.
+                    It's not enough time to truly feel like you've
+                    taken a break from school. It's an opportunity
+                    to catch up on school work or catch up on things
+                    outside of school...if you're lucky! Some professors
+                    still assign assignments due right after the break.
+                </p>
+                <br>
+                <p>I don't even know what I'm gonna be doing 😅</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

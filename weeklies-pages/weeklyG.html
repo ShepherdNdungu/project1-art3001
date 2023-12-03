@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly F</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: wheat;
+            /* font-family: monospace; */
+        }
+        body {
+            background: black;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .section {
+            display: block;
+            padding: 20px 150px 20px;
+        }
+
+        h1 {
+            font-weight: 600;
+        }
+
+        button {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>Weekly G</h1>
+    </div>
+    
+    <div class="section">
+        <button id="button">Click for content</button>
+    </div>
+
+    <div class="section" id="text_section"></div>
+    <script>
+        document.getElementById("button").addEventListener("click", () => { 
+            let text_section = document.getElementById("text_section");
+            let par = document.createTextNode("This week we got into JavaScript. More specificly, p5.js which is a library in JavaScript that will allow us to make some cool stuff! After messingaround with js in another class, I realize it's not my favorite language nor does it come as naturally as other languages.");
+            text_section.appendChild(par);
+            par = document.createTextNode(" It's such a wordy language, making readability a bit hard. But we'll see. Hopefully it's not as bad as I think it may be.");
+            text_section.appendChild(par);
+            document.getElementById("button").style.display = "none";
+        });
+    </script>
+</body>
+</html>

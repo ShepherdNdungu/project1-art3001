@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly C</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Rock+Salt&display=swap" rel="stylesheet">
+    <style>
+	@keyframes changeColor {
+    0%      {background-color: aquamarine;}
+    25%     {background-color: red;}
+    50%     {background-color: purple;}
+    75%     {background-color: wheat;}
+    100%    {background-color: whitesmoke;}
+    100%    {background-color: orange;}
+    100%    {background-color: green;}
+}
+
+@keyframes random {
+    0%      {left: 0px; top:0px;}
+    25%     {left: 5px; top:10px;}
+    50%    {left: 12px; top:-29px;}
+    75%    {left: 6px; top:100px;}
+    100%    {left: 0px; top:0px;}
+}
+
+exFormats{
+    color:black
+}
+
+.exFormat green{
+    color: green;
+    background-color: orange;
+}
+
+.exFormat fonts{
+    font-family: Rock Salt;
+    font-size: x-large;
+}
+
+.exFormat animation{
+    position: relative;
+    animation-name: random;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+/* ---------------------------------------- */
+body{
+    background: linear-gradient(to right, orange 0%, yellow 100%);
+    color: white;
+}
+div{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Croissant One', cursive;
+}
+
+.container{
+    width: 400px;
+    height: 200px;
+    position: relative;
+    animation: changeColor 1s 3s infinite;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+
+
+    border: solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px black;
+
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Weekly C</h1>
+        <h3>September 17th, 2023</h3>
+    </div>
+    <div>
+        <p class="exFormat">
+            This week was all about CSS and understanding the language.
+            I learned how to change the format of text such as 
+            <green>color</green>, 
+            <fonts>font</fonts>, 
+            <animation>animation</animation>, 
+            and many more!
+        </p>
+        </div>
+        <div class="container">
+        <p>
+            I was able to use the knowledge I've learned in this class
+            at work! My new understanding of CSS and HTML has allow me
+            to be more intentional with the edits I make to our website.
+            And since I've now been tasked with maintaining and eventually
+             helping revamp the website, I will strive to continue learning 
+             about CSS and HTML.
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <footer><i>That's it!</i></footer>
+    </div>
+</body>
+</html>
